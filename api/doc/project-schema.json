@@ -6,7 +6,7 @@
     "properties": {
         "imageRepository": {
             "items": {
-                "required": true, 
+                "required": false, 
                 "type": "object", 
                 "id": "0", 
                 "properties": {
@@ -22,13 +22,13 @@
                     }
                 }
             }, 
-            "required": true, 
+            "required": false, 
             "type": "array", 
             "id": "imageRepository"
         }, 
         "buildConfig": {
             "items": {
-                "required": true, 
+                "required": false, 
                 "type": "object", 
                 "id": "0", 
                 "properties": {
@@ -54,7 +54,7 @@
                     }
                 }
             }, 
-            "required": true, 
+            "required": false, 
             "type": "array", 
             "id": "buildConfig"
         }, 
@@ -65,7 +65,7 @@
         }, 
         "parameters": {
             "items": {
-                "required": true, 
+                "required": false, 
                 "type": "object", 
                 "id": "0", 
                 "properties": {
@@ -91,13 +91,13 @@
                     }
                 }
             }, 
-            "required": true, 
+            "required": false, 
             "type": "array", 
             "id": "parameters"
         }, 
         "serviceLinks": {
             "items": {
-                "required": true, 
+                "required": false, 
                 "type": "object", 
                 "id": "0", 
                 "properties": {
@@ -135,7 +135,7 @@
                     }
                 }
             }, 
-            "required": true, 
+            "required": false, 
             "type": "array", 
             "id": "serviceLinks"
         }, 
@@ -151,7 +151,7 @@
                         "id": "description"
                     }, 
                     "labels": {
-                        "required": true, 
+                        "required": false, 
                         "type": "object", 
                         "id": "labels", 
                         "properties": {
@@ -211,7 +211,7 @@
                                                             "id": "name"
                                                         }, 
                                                         "env": {
-                                                            "required": true, 
+                                                            "required": false, 
                                                             "type": "array", 
                                                             "id": "env",
                                                             "items": {
@@ -234,7 +234,7 @@
                                                         }, 
                                                         "ports": {
                                                             "items": {
-                                                                "required": true, 
+                                                                "required": false, 
                                                                 "type": "object", 
                                                                 "id": "0", 
                                                                 "properties": {
@@ -250,7 +250,7 @@
                                                                     }
                                                                 }
                                                             }, 
-                                                            "required": true, 
+                                                            "required": false, 
                                                             "type": "array", 
                                                             "id": "ports"
                                                         }
