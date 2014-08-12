@@ -212,23 +212,23 @@
                                                         }, 
                                                         "env": {
                                                             "required": true, 
-                                                            "type": "object", 
-                                                            "id": "env", 
-                                                            "properties": {
-                                                                "PGUSER": {
-                                                                    "required": true, 
-                                                                    "type": "string", 
-                                                                    "id": "PGUSER"
-                                                                }, 
-                                                                "PGPASSWORD": {
-                                                                    "required": true, 
-                                                                    "type": "string", 
-                                                                    "id": "PGPASSWORD"
-                                                                }, 
-                                                                "PGDATABASE": {
-                                                                    "required": true, 
-                                                                    "type": "string", 
-                                                                    "id": "PGDATABASE"
+                                                            "type": "array", 
+                                                            "id": "env",
+                                                            "items": {
+                                                                "id": "0",
+                                                                "type": "object",
+                                                                "required": false,
+                                                                "properties": {
+                                                                    "name": {
+                                                                        "required": true, 
+                                                                        "type": "string", 
+                                                                        "id": "name"
+                                                                    }, 
+                                                                    "value": {
+                                                                        "required": true, 
+                                                                        "type": "string", 
+                                                                        "id": "value"
+                                                                    }
                                                                 }
                                                             }
                                                         }, 
