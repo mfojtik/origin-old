@@ -11,7 +11,7 @@ type ExpresionGenerator struct {
 }
 
 func (g ExpresionGenerator) Value() (string, error) {
-	return FromTemplate(g.expr)
+	return Template{expresion: g.expr}.Process()
 }
 
 type PasswordGenerator struct {
@@ -19,7 +19,7 @@ type PasswordGenerator struct {
 }
 
 func (g PasswordGenerator) Value() (string, error) {
-	return FromTemplate(fmt.Sprintf("[\\a]{%d}", g.length))
+	return Template{expresion: fmt.Sprintf("[\\a]{%d}", g.length)}.Process()
 }
 
 type Generator struct{}
